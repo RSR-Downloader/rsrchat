@@ -23,8 +23,8 @@ async def starkisnoob(event):
 @chatbot_cmd("alive", is_args=False)
 @god_only
 async def stark(event):
-    await event.reply("<b><u>Yeah, I am Alive.</b></u>", parse_mode="HTML")
+    await event.reply("<b><u>Ka inpeih e.</b></u>", parse_mode="HTML")
 
 @chatbot_cmd("repo", is_args=False)
 async def stark(event):
-    await event.reply("<b><u>My Repo is Here :</b></u> <code>https://github.com/StarkGang/ChatBot</code>", parse_mode="HTML")
+    await event.reply("<b><u>Master :</b></u> <code>https://t.me/rsrmusic</code>", parse_mode="HTML")
