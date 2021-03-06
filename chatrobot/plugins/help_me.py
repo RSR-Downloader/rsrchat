@@ -31,12 +31,12 @@ async def sedlyfsir(event):
     oksir = Config.CUSTOM_START
     if Config.CUSTOM_START is None:
         text_me = (f"**Hai. {firstname} , I am {bot_username}.** \n"
-               f"`I am A ChatBot To Talk With My` [Master](tg://user?id={oknoob}) \n"
-               f"**Send Me And I Will Send To Moi Master.** \n"
-               f"**Thank You**")
+               f"`Ka Master hnen a i harsatna i thlen theihna tur ka ni e` [Master](tg://user?id={1060318977}) \n"
+               f"**I harsatna leh zawh duh chu sawi la,ka Master hnen ah ka lo thlen ang.** \n"
+               f"**Ka lawm e**")
     else:
         text_me = f"{oksir}"
-    formaster = "Sir. How Can I Help You?"
+    formaster = "Engtin nge ka puih theih ang che?"
     if event.sender_id == Config.OWNER_ID:
         ok = await chatbot.send_message(event.chat_id, message=formaster, buttons = [
              [custom.Button.inline("Commands For Owner.", data="cmds")],
@@ -57,10 +57,10 @@ async def sedlyfsir(event):
 async def help(event):
     if event.query.user_id is not Config.OWNER_ID:
         await event.edit(
-            "You Can Deploy Your Own ChatBot By Watching Video Down There. \nThank You For Contacting Me.",
+            "I harsat na leh hriat duh a tanpui che kan tum ber ani. \ni tangkai pui ngei kan beisei.",
             buttons=[
-                [Button.url("Deploy Tutorial 📺", "t.me/Infotel14")],
-                [Button.url("Need Help ❓", "t.me/SerenaAssistantBot")],
+                [Button.url("Channel📺", "t.me/mizolibrary")],
+                [Button.url("Group🚸", "t.me/rsrtginfo")],
             ],
         )
         
