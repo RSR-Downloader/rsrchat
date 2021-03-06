@@ -20,15 +20,15 @@ async def starkisnoob(event):
     if event.sender_id == Config.OWNER_ID:
         msg = await event.get_reply_message()
         if msg is None:
-            await event.reply("Reply To User")
+            await event.reply("Zawttu reply na")
         user_id, reply_message_id = his_userid(msg.id)
     if is_he_added(user_id):
-        await event.reply("Already Blacklisted.")
+        await event.reply("Blacklist a dah ani.")
     elif not is_he_added(user_id):
         add_nibba_in_db(user_id)
-        await event.reply("Blacklisted This Dumb Person")
+        await event.reply("Blacklist a dah ani.")
         await chatbot.send_message(
-            user_id, "You Have Been Blacklisted And You Can't Message My Master Now."
+            user_id, "Blacklist ah i awm a,engmah i zawt ve thei rih lo."
         )
         await chatbot.send_message(Config.DUMB_CHAT, f"Blacklisted New user \nUser ID : {user_id}")
 
@@ -41,11 +41,11 @@ async def starky(event):
         event.raw_text
         user_id, reply_message_id = his_userid(msg.id)
     if not is_he_added(user_id):
-        await event.reply("Not Even Blacklisted.")
+        await event.reply("Blacklist a dah theih anilo,ka master ani.")
     elif is_he_added(user_id):
         removenibba(user_id)
         await event.reply("DisBlacklisted This Dumb Person")
         await chatbot.send_message(
-            user_id, "Congo! You Have Been Unblacklisted By My Master."
+            user_id, "Ka lawmpui a che,blacklist atanga paih ini."
         )
         await chatbot.send_message(Config.DUMB_CHAT, f"DisBlacklisted User \nUser ID : {user_id}")
