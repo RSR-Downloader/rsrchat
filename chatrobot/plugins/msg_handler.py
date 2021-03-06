@@ -39,7 +39,7 @@ async def all_messages_catcher(event):
                 )
             )
         except telethon.errors.rpcerrorlist.UserNotParticipantError:
-            await event.reply(f"**To Message My Master, Please Join My Channel. :)**",
+            await event.reply(f"**Ka Master hnen ah message thawn ani, Channel join rawh. :)**",
                              buttons = [Button.url("Join Channel", Config.JMTC_LINK)])
             return
     await event.get_sender()
